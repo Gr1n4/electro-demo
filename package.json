@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "build"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -15,8 +16,15 @@
     "demo"
   ],
   "author": "GitHub",
+  "build": {
+    "appId": "com.electron.electron-quick-start",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-builder": "^18.0.1"
   }
 }
